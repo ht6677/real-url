@@ -15,7 +15,7 @@
 ## 运行
 
 1. 项目使用了很简单的 Python 代码，仅在 Python 3 环境运行测试。
-2. 具体所需模块请查看代码中的 import。
+2. 具体所需模块请查看 requirements.txt
 3. 获取斗鱼和爱奇艺的直播源，需 JavaScript 环境，可使用 node.js。爱奇艺直播里有个参数是加盐的 MD5，由仓库中的 iqiyi.js 生成。
 4. 每个平台的直播源和弹幕获取功能相互独立，以后再整合。弹幕食用：python main.py
 
@@ -25,7 +25,13 @@
 
 ## 更新
 
-### 2020.09.12：新增：斗鱼添加一个从PC网页端获取直播源的方法，可选线路和清晰度；新增requirements.txt文件；更新代码。
+### 2020.12.20：修复直播源：抖音、艺气山、花椒、快手、来疯、龙珠、PPS、人人直播、17live 可能需要挂代理。
+
+2020.10.17：修复：西瓜直播、YY直播。
+
+2020.09.26：更新：虎牙直播源；注释掉未完成的 YY 直播弹幕功能。
+
+2020.09.12：新增：斗鱼添加一个从PC网页端获取直播源的方法，可选线路和清晰度；新增requirements.txt文件；更新代码。
 
 2020.08.18：更新快手直播源，现在播放链接需要带参数；更新快手直播弹幕，直接用 protobuf 序列化；新增 AcFun、艺气山两个平台的弹幕功能。
 
@@ -108,4 +114,10 @@
 2019.11.03：新增虎牙直播源。
 
 2019.11.02：修复斗鱼预览地址获取的方法；新增未开播房间的判断。
+
+## 鸣谢
+
+感谢 [JetBrains](https://www.jetbrains.com/?from=real-url) 提供的 free JetBrains Open Source license
+
+[![JetBrains-logo](https://i.loli.net/2020/10/03/E4h5FZmSfnGIgap.png)](https://www.jetbrains.com/?from=real-url)
 
